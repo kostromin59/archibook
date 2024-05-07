@@ -2,7 +2,7 @@
   padding-top: 60px;
   /* TODO: Убрать, т.к. для заглушки */
   padding-bottom: 60px;
-  background-image: url("/hero.png");
+  background-image: url("../images/hero.png");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: contain;
@@ -29,7 +29,7 @@
     padding: 75px 0;
 
     @media (max-width: 1024px) {
-      background-image: url("/hero.png");
+      background-image: url("../images/hero.png");
       background-repeat: no-repeat;
       background-position: right top;
       background-size: contain;
