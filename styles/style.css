@@ -1,0 +1,92 @@
+@import url("./normalize.css");
+@import url("./fonts.css");
+@import url("./hero.css");
+
+:root {
+  --light: #f6e8db;
+  --primary: #fe4066;
+  --dark: #000000;
+  --font-family: "Montserrat", sans-serif;
+
+  min-width: 375px;
+  box-sizing: border-box;
+  color: var(--dark);
+  background-color: var(--light);
+  font-family: var(--font-family);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1286px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.link-button {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 220%;
+  text-align: center;
+  color: var(--light);
+  padding: 20px 110px;
+  background-color: var(--primary);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 0 15px var(--primary);
+  }
+
+  &:visited {
+    color: var(--light);
+  }
+
+  @media (max-width: 768px) {
+    max-width: 350px;
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    padding: 12px 80px;
+  }
+
+  @media (max-width: 470px) {
+    max-width: none;
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
