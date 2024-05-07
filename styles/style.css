@@ -29,6 +29,12 @@ p {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 address {
   font-style: normal;
 }
