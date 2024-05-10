@@ -1,0 +1,258 @@
+.events {
+  padding: 60px 0;
+
+  .container {
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: start;
+      padding: 0 20px;
+    }
+
+    nav {
+      display: flex;
+      gap: 90px;
+
+      @media (max-width: 1024px) {
+        gap: 30px;
+      }
+
+      button {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 200%;
+        color: var(--dark);
+        background: none;
+        transition:
+          text-shadow 0.2s ease,
+          color 0.2s ease;
+
+        @media (max-width: 900px) {
+          font-size: 30px;
+        }
+
+        &:hover {
+          color: var(--primary);
+        }
+
+        &.active {
+          color: var(--primary);
+
+          &:hover {
+            text-shadow: 0 0 5px var(--primary);
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    padding: 40px;
+    border-radius: 25px;
+    background-color: var(--light-bg);
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
+  }
+
+  footer {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      padding: 30px 25px 0 30px;
+    }
+  }
+}
+
+.events__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: var(--dark);
+
+  @media (max-width: 900px) {
+    font-size: 30px;
+  }
+}
+
+.events__about-day {
+  display: grid;
+  grid-template-columns: 270px 250px 1fr;
+  margin-bottom: 75px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+  time {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 117%;
+    color: var(--dark);
+
+    span {
+      display: block;
+    }
+
+    @media (max-width: 1024px) {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 175%;
+      margin-bottom: 5px;
+
+      span {
+        display: inline;
+      }
+    }
+  }
+}
+
+.events__topic {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 117%;
+  color: var(--primary);
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 40px;
+  }
+}
+
+.events__sponsor {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139%;
+    color: var(--dark);
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.events__event.event {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    border-top: 1px solid var(--dark);
+    padding: 15px 0;
+  }
+
+  time {
+    width: 270px;
+    padding: 45px 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 175%;
+
+    @media (max-width: 768px) {
+      padding: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  .event__info {
+    width: 100%;
+    padding: 45px 0;
+    display: flex;
+    border-top: 1px solid var(--dark);
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 15px;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  &:last-child {
+    time {
+      padding-bottom: 0;
+    }
+
+    .event__info {
+      padding-bottom: 0;
+    }
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 139%;
+    color: var(--primary);
+
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .event__speakers {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      min-width: 100px;
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #d9d9d9;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      color: var(--dark);
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -100,6 +100,90 @@
         </div>
       </footer>
     </section>
+
+    <section class="events">
+      <div class="container">
+        <header>
+          <h2 class="events__title">Программа</h2>
+          <nav aria-label="Программа по дням проведения выставки">
+            <button id="day-button" class="active" data-day="2024-05-21">
+              <time datetime="2024-05-21">21.05</time>
+            </button>
+            <button id="day-button" data-day="2024-05-22">
+              <time datetime="2024-05-22">22.05</time>
+            </button>
+            <button id="day-button" data-day="2024-05-23">
+              <time datetime="2024-05-23">23.05</time>
+            </button>
+          </nav>
+        </header>
+        <div class="content">
+          <div class="events__about-day">
+            <time datetime="2024-05-21">
+              21.05.2024
+              <span>вторник</span>
+            </time>
+            <h3 class="events__topic">Дизайн</h3>
+            <div class="events__sponsor">
+              <p>
+                Спонсор дня:<br />
+                <span>строительная компания Мастерская событий</span>
+              </p>
+              <img
+                src="./images/14-mebelovo 1.svg"
+                alt="Логотип спонсора дня"
+              />
+            </div>
+          </div>
+          <ol aria-label="Мероприятия">
+            <li class="events__event event">
+              <time datetime="2024-05-21T10:00:00">10:00 - 22:00</time>
+              <div class="event__info">
+                <div>
+                  <h4>
+                    Выставка производителей пермского и российского интерьерного
+                    и строительного рынка.
+                  </h4>
+                  <p>Консультации дизайнеров интерьера для пермяков.</p>
+                </div>
+              </div>
+            </li>
+            <li class="events__event event">
+              <time datetime="2024-05-21T11:00:00">11:00</time>
+              <div class="event__info">
+                <div>
+                  <h4>Генеральный план. Развитие городского пространства.</h4>
+                  <p>
+                    Министерство управления имуществом и градостроительной
+                    деятельностью Пермского края 
+                  </p>
+                </div>
+                <ul class="event__speakers" aria-label="Спикеры">
+                  <li>
+                    <img src="#" alt="Имя Фамилия" />
+                    <p>Спикер:<br /><span>Имя Фамилия</span></p>
+                  </li>
+                  <li>
+                    <img src="#" alt="Имя Фамилия" />
+                    <p>Спикер:<br /><span>Имя Фамилия</span></p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <footer>
+          <!-- TODO: Пом����нять на ссылку -->
+          <button
+            onclick="alert('Регистрация будет доступна после 10 мая!')"
+            class="link-button"
+          >
+            Регистрация
+          </button>
+        </footer>
+      </div>
+    </section>
+
     <section class="partners">
       <div class="container">
         <ul aria-label="Партнёры">
@@ -249,5 +333,6 @@
         </ul>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

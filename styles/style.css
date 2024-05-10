@@ -1,10 +1,12 @@
 @import url("./normalize.css");
 @import url("./fonts.css");
 @import url("./hero.css");
+@import url("./events.css");
 @import url("./partners.css");
 
 :root {
   --light: #f6e8db;
+  --light-bg: #fff7ef;
   --primary: #fe4066;
   --dark: #000000;
   --font-family: "Montserrat", sans-serif;
