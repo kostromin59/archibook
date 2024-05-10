@@ -67,10 +67,18 @@ buttons.forEach((button) => {
     // Сделать кнопку активной
     e.currentTarget.classList.add("active");
 
+
     // Заменить контент
     const day = e.currentTarget.dataset.day;
+    window.sessionStorage.setItem("day", day)
     content.innerHTML = makeEventTemplate(day, events[day]);
   });
 });
 
-content.innerHTML = makeEventTemplate("2024-05-21", events["2024-05-21"]);
+const day = window.sessionStorage.getItem("day") || "2024-05-21"
+buttons.forEach((btn) => btn.classList.remove("active"));
+buttons.find((btn) => btn.dataset.day === day).classList.add("active")
+
+
+console.log(day)
+content.innerHTML = makeEventTemplate(day, events[day]);
