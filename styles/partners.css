@@ -1,5 +1,10 @@
 .partners {
   padding: 60px 0;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 350px;
+  }
+
   ul {
     display: flex;
     flex-direction: row;

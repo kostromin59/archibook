@@ -38,7 +38,7 @@ function makeEventTemplate(date, event) {
                         ${eventItem.speakers
                           .map(
                             (speaker) =>
-                              `<li><img src="${speaker.image}" alt="${speaker.name}" /><p>Спикер:<br /><span>${speaker.name}</span></p></li>`,
+                              `<li><img src="${speaker.image}" alt="${speaker.name}" loading="lazy" /><p>Спикер:<br /><span>${speaker.name}</span></p></li>`,
                           )
                           .join("")}
                       </ul>`
@@ -55,7 +55,8 @@ function makeEventTemplate(date, event) {
 
   return html;
 }
-const buttons = Array.from(document.querySelectorAll("#day-button"));
+
+const buttons = Array.from(document.querySelectorAll(".day-button"));
 const content = document.getElementById("event-content");
 
 buttons.forEach((button) => {
