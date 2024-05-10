@@ -1,7 +1,5 @@
 .hero {
-  padding-top: 60px;
-  /* TODO: Убрать, т.к. для заглушки */
-  padding-bottom: 60px;
+  padding: 60px 0;
   background-image: url("../images/hero.png");
   background-repeat: no-repeat;
   background-position: right top;
