@@ -125,3 +125,7 @@ ol {
   white-space: nowrap;
   width: 1px;
 }
+
+.rounded {
+  border-radius: 50%;
+}

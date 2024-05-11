@@ -6,6 +6,7 @@
     "sponsor": {
       "text": "Мастерская событий, строительная компания",
       "image": "/mn.png",
+      "isRounded": true,
       "link": "http://xn--80aclndcpsbrajcdidg5n.xn--p1ai/"
     },
     "events": [

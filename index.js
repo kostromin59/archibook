@@ -15,7 +15,7 @@ function makeEventTemplate(date, event) {
             Спонсор дня:<br />
             <span>${event.sponsor.text}</span>
           </p>
-          <img src="${event.sponsor.image}" alt="${event.sponsor.text}" loading="lazy" />
+          <img src="${event.sponsor.image}" alt="${event.sponsor.text}" class="${event.sponsor.isRounded ? "rounded" : ""}" loading="lazy" />
         </a>
       </div>
     </div>
@@ -82,5 +82,4 @@ buttons.forEach((btn) => btn.classList.remove("active"));
 buttons.find((btn) => btn.dataset.day === day).classList.add("active")
 
 
-console.log(day)
 content.innerHTML = makeEventTemplate(day, events[day]);
