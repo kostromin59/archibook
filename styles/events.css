@@ -91,7 +91,7 @@
 
 .events__about-day {
   display: grid;
-  grid-template-columns: 270px 460px 1fr;
+  grid-template-columns: 270px 300px 1fr;
   margin-bottom: 75px;
 
   @media (max-width: 1024px) {
@@ -139,14 +139,15 @@
 }
 
 .events__sponsor {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  a {
+    display: flex;
+    gap: 50px;
 
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    align-items: start;
-    gap: 15px;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: start;
+      gap: 15px;
+    }
   }
 
   p {
@@ -158,6 +159,10 @@
     span {
       font-weight: 700;
     }
+  }
+
+  img {
+    max-height: 90px;
   }
 }
 

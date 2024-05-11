@@ -10,11 +10,13 @@ function makeEventTemplate(date, event) {
       </time>
       <h3 class="events__topic">${event.topic}</h3>
       <div class="events__sponsor">
-        <p>
-          Спонсор дня:<br />
-          <span>${event.sponsor.text}</span>
-        </p>
-        <img src="${event.sponsor.image}" alt="${event.sponsor.text}" loading="lazy" />
+        <a href="${event.sponsor.link}" target="_blank">
+          <p>
+            Спонсор дня:<br />
+            <span>${event.sponsor.text}</span>
+          </p>
+          <img src="${event.sponsor.image}" alt="${event.sponsor.text}" loading="lazy" />
+        </a>
       </div>
     </div>
   `;

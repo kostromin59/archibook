@@ -23,6 +23,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: initial;
+  }
+}
+
 h1,
 h2,
 h3,

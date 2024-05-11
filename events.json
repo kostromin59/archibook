@@ -5,7 +5,8 @@
     "weekday": "вторник",
     "sponsor": {
       "text": "Мастерская событий, строительная компания",
-      "image": "/mc.jpg"
+      "image": "/mn.png",
+      "link": "http://xn--80aclndcpsbrajcdidg5n.xn--p1ai/"
     },
     "events": [
       {
@@ -82,7 +83,8 @@
     "weekday": "среда",
     "sponsor": {
       "text": "Кухни «Маруся», салон кухонь",
-      "image": "/6-marusya.svg"
+      "image": "/6-marusya.svg",
+      "link": "#"
     },
     "events": [
       {
@@ -174,7 +176,8 @@
     "weekday": "четверг",
     "sponsor": {
       "text": "строительная компания Мастерская событий",
-      "image": "/14-mebelovo 1.svg"
+      "image": "/14-mebelovo 1.svg",
+      "link": "#"
     },
     "events": [
       {
