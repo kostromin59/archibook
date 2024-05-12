@@ -13,6 +13,14 @@
     flex-wrap: wrap;
     gap: 30px;
 
+    &.partners__info {
+      margin-bottom: 50px;
+
+      img {
+        max-width: 200px;
+      }
+    }
+
     img {
       max-width: 120px;
     }
@@ -28,22 +36,4 @@
   font-size: 30px;
   text-align: center;
   margin-bottom: 40px;
-}
-
-.partners__info {
-  margin-bottom: 50px;
-
-  li {
-    width: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @media (max-width: 768px) {
-      width: 120px;
-      img {
-        height: 60px;
-      }
-    }
-  }
 }
