@@ -37,6 +37,7 @@
         line-height: 200%;
         color: var(--dark);
         background: none;
+        padding: 0;
         transition:
           text-shadow 0.2s ease,
           color 0.2s ease;
