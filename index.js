@@ -77,7 +77,7 @@ buttons.forEach((button) => {
   });
 });
 
-const day = window.sessionStorage.getItem("day") || "2024-05-21"
+const day = window.sessionStorage.getItem("day") || "2024-05-22"
 buttons.forEach((btn) => btn.classList.remove("active"));
 buttons.find((btn) => btn.dataset.day === day).classList.add("active")
 

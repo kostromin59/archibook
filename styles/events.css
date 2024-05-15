@@ -27,10 +27,6 @@
         gap: 30px;
       }
 
-      @media (max-width: 768px) {
-        gap: 15px;
-      }
-
       button {
         font-weight: 600;
         font-size: 40px;
