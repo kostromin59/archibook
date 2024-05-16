@@ -88,11 +88,13 @@
 
 .footer__place {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 40px;
+  padding-right: 10px;
   color: var(--light);
 
   @media (max-width: 1024px) {
     text-align: center;
+    padding-right: 0;
   }
 
   @media (max-width: 768px) {
